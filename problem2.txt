@@ -2,18 +2,18 @@
 
 let str = "racecar";
 
-let lr = "";
-let rl = "";
+let ltr = "";
+let rtl = "";
 
-for(let i=0;i<=str.length-1;i++){
-  lr=lr+str[i]
+for(let i=0;i<str.length;i++){
+  ltr=ltr+str[i]
 }
 
 for(let j=str.length-1;j>=0;j--){
-  rl=rl+str[j]
+  rtl=rtl+str[j]
 }
 
-if(lr!=rl){
+if(ltr==rtl){
   console.log("Yes, given sting is palindrome")
 }else{
   console.log("oops, given string is not a palindrome")
